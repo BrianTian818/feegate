@@ -117,7 +117,7 @@ from x402.mcp import create_payment_hook
 from eth_account import Account
 
 account = Account.from_key("YOUR_PRIVATE_KEY")   # only needs USDC on Base
-MCP_URL = "https://api.feegate.org/mcp/gpu-market"
+MCP_URL = "https://feegate.org/mcp/gpu-market"
 
 async with streamablehttp_client(MCP_URL) as (r, w, _):
     async with ClientSession(r, w, hooks=[create_payment_hook(account)]) as s:
