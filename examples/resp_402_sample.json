@@ -1,0 +1,33 @@
+{
+  "x402Version": 2,
+  "error": "payment_required",
+  "accepts": [
+    {
+      "scheme": "exact",
+      "network": "eip155:8453",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "amount": "60000",
+      "payTo": "0x230cd9cd33589bcf33cd32e5aa4f9e0c3994a63b",
+      "maxTimeoutSeconds": 300,
+      "resource": "https://feegate.org/api/supply/asset/case_status",
+      "description": "香港优才审批进度 · case_status",
+      "extra": {
+        "tool": "case_status",
+        "assetId": "asset",
+        "priceUsdc": 0.06,
+        "plan": "self",
+        "platformRate": 0.15
+      }
+    }
+  ],
+  "_feegate": {
+    "how_to_pay": [
+      "x402 钱包：请求头带 X-Payment（base64 的 x402 v2 payload），服务端先 /verify 再交付成功后 /settle",
+      "已经付过的链上交易：请求头带 X-Payment-Tx: 0x…（USDC transfer 到 payTo）",
+      "人民币积分：请求头带 Authorization: Bearer fg_…（按当日汇率折算积分）",
+      "没有加密钱包？https://feegate.org/pay 支付宝/微信/对公充值积分，充完再来调"
+    ],
+    "settle_after_delivery": true,
+    "docs": "https://feegate.org/docs"
+  }
+}
