@@ -1,3 +1,5 @@
+[![M8ven Score](https://m8ven.ai/badge/mcp/briantian818-feegate-omo8m0)](https://m8ven.ai/mcp/briantian818-feegate-omo8m0?s=readme)
+
 # Feegate — pay-per-call data marketplace for AI agents (x402 / USDC on Base)
 
 > Feegate is a pay-per-call data marketplace for AI agents: 5 purchasable MCP data products
